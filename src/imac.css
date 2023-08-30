@@ -182,3 +182,26 @@
     cursor: pointer;
 }
 
+
+
+
+.image-overlay {
+    position: absolute;
+    top: 30px;
+    left: 260px;
+    display: flex;
+    flex-direction: row;}
+  
+  .image-overlay img {
+    margin: 2px;
+    width: 136px;
+    height: 152px;
+    border-radius: 11px;
+    /* margin-bottom: 18px; */
+    transition: transform 0.3s, opacity 0.3s;
+  }
+  
+  .image-overlay img:hover {
+    transform: scale(1.1); /* Efecto de zoom en hover */
+    opacity: 0.8; /* Cambio de opacidad en hover */
+  }
