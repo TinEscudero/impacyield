@@ -4,10 +4,14 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
 		
 		<link rel="icon" type="image/png" href="https://impactyield.com/wp-content/uploads/2020/05/favicon.png">
-
+    <link rel="stylesheet" type="text/css" href="imac.css">
 		<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
 
 	<!-- This site is optimized with the Yoast SEO plugin v20.13 - https://yoast.com/wordpress/plugins/seo/ -->
@@ -70,14 +74,13 @@ var ajax_sib_front_object = {"ajax_url":"https:\/\/impactyield.com\/wp-admin\/ad
 				</a>
 
 <div id="tt-default3" class="no-mobile autocomplete-wrapper mb-0 mr-1" style="width: 20%"></div>
-<form action="" class="no-mobile">
-	<input type="hidden" id="autocompletefunds2" name="p">
-	<a type="submit" class="btn btn-primary btn-sm btn-searchfunds" style="color:#fff;">Go!</a>
-</form>
+
 				<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 				</button>
-				<div id="navbarCollapse" class="navbar-collapse collapse"><ul id="menu-top" class="navbar-nav ml-auto"><li id="menu-item-4461" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-4461"><a title="Home" href="/home.html">Home</a></li>
+				<div id="navbarCollapse" class="navbar-collapse collapse"><ul id="menu-top" class="navbar-nav ml-auto">
+          <li id="menu-item-4461" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-4461"><a title="Home" href="/home.html">Home</a></li>
+          <li id="menu-item-4244" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4244"><a title="Dashboards" href="/src/dashboart-estadisiticas-impac.html">Dashboards</a></li>
 <li id="menu-item-4244" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4244"><a title="About Us" href="">About Us</a></li>
 <li id="menu-item-4463" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4463 dropdown"><a title="Database" href="" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true">Database <span class="caret"></span></a>
 <ul role="menu" class=" dropdown-menu">
@@ -859,11 +862,18 @@ var ajax_sib_front_object = {"ajax_url":"https:\/\/impactyield.com\/wp-admin\/ad
     
     
     
-    </div>
-  
-    <img style=" border-bottom-left-radius: 10px;
+        <br>
+        <br>
+
+        
+          <div style="width: auto; height:50px;background-color:#2a7ba0;margin: -20px;border-top-left-radius:8px; border-top-right-radius: 8px; ;">
+          <h1  class="h5 mb-3" style="padding: 15px;color: #fff ;">Other funds that may interest you</h1>
+      </div>
+        </div>
+        <img style=" border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;" src="/src/img/1234567890.PNG" alt="Imagen relacionada" width="300">
     
+   
     </div>
     
     
@@ -992,20 +1002,275 @@ var ajax_sib_front_object = {"ajax_url":"https:\/\/impactyield.com\/wp-admin\/ad
 </div>
 </div>
 <div class="card border-0 mb-3 shadow-sm form-not-logged">
-    <div class="card-body">
-        <h5 class="mb-3">Are you interested in promoting this fund?<br> </h5>
-        <p class="mb-4">Promoting a fund offers lucrative opportunities, diversification benefits, and the
-            chance to make a positive social impact. Additionally, it provides a pathway to build a strong
-            network and potentially earn a steady stream of residual income.</p>
+  <div class="card-body">
+      <h5 class="mb-3">Are you interested in promoting this fund?<br> </h5>
+      <p class="mb-4">Promoting a fund offers lucrative opportunities, diversification benefits, and the
+          chance to make a positive social impact. Additionally, it provides a pathway to build a strong
+          network and potentially earn a steady stream of residual income.</p>
 
-        <div class="row">
-            <div class="col-md-6">
-                
-                <a href="/src/promote-fund.html" id="/promote-fund.html" class="btn btn-primary btn-lg btn-block">Promote your fund</a>
-            </div>
-        </div>
-    </div>
+      <div class="row">
+          <div class="col-md-6">
+              <!-- Agrega el id "openPopup" al enlace para abrir el pop-up -->
+              <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#modal" style="width: auto;">Promote your fund</button>
+          </div>
+      </div>
+  </div>
 </div>
+
+
+
+
+<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="successModalLabel" style="color:#2a7ba0">Promote your fund</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      
+      <div class="modal-body">
+  
+
+
+
+
+
+  
+        
+        <h7 class="mb-4">Select target investor’s preferences</h7>
+        <br><br/>
+        
+        <br action="" method="post" class="needs-validation" novalidate>
+          
+          
+          <!-- Primer Input -->
+          
+    
+
+
+
+
+
+
+
+
+
+  <div class="primerInput">
+    <label for="sdg">Type</label>
+    <select name="sdg" class="form-control" id="sdg" required>
+        <option selected="">Select Type</option>
+        <option value='goal-1'>All</option>
+        <option value='goal-2'>Sustainable Development Goals</option>
+        <option value='goal-3'>Zero Hunger</option>
+        <option value='goal-4'>Gener Equality</option>
+       
+    </select>
+</div>
+
+
+
+
+
+
+
+
+<div class="primerInput">
+  <label for="sdg">Asset Class</label>
+    <select name="sdg" class="form-control" id="sdg" required>
+        <option selected="">Select Asset Class</option>
+        <option value='goal-1'>ABS</option>
+        <option value='goal-2'>Fixed Income</option>
+        <option value='goal-3'>Fud of Fuds</option>
+        <option value='goal-4'>Infraestructure</option>
+       
+    </select>
+</div>
+
+
+
+
+<div class="primerInput">
+    <label for="phone">Impact Geography</label>
+    <select name="geography" class="form-control" id="geography" required>
+      <option selected="">Select Area</option>
+        <option value="global">Global</option>
+        <option value="africa">Africa</option>
+        <option value="northern-africa">- Northern Africa</option>
+        <option value="algeria">- - Algeria</option>
+        <option value="egypt">- - Egypt</option>
+        <option value="libya">- - Libya</option>
+        <option value="united-states-of-america">- - United States of America</option>
+    </select>
+  </div>
+  
+  
+
+<div class="primerInput">
+    <label for="sdg">Impact Categories</label>
+    <select name="sdg" class="form-control" id="sdg" required>
+        <option selected="">Select Categories</option>
+        <option value='goal-1'>Clean Air</option>
+        <option value='goal-2'>Biodiversity</option>
+        <option value='goal-3'>Arts</option>
+        <option value='goal-4'>Community Development</option>
+      
+    </select>
+</div>
+
+
+
+<div class="primerInput">
+  <label for="sdg">SDG</label> 
+  <select name="sdg" class="form-control" id="sdg" required>
+        <option selected="">Select SDG</option>
+        <option value='goal-1'>15</option>
+        <option value='goal-2'>16</option>
+        <option value='goal-3'>17</option>
+        <option value='goal-4'>18</option>
+        <option value='goal-5'>19</option>
+    </select>
+</div>
+
+<div class="primerInput">
+  <label for="sdg">Ticket Size</label>
+  <select name="sdg" class="form-control" id="sdg" required>
+        <option selected="">Select Ticket</option>
+        <option value='goal-1'>20M€</option>
+        <option value='goal-2'>200m€</option>
+        <option value='goal-3'>250M€</option>
+        <option value='goal-4'>300M€</option>
+   
+    </select>
+</div>
+
+
+
+
+
+
+
+<!-- Segundo Input -->
+<div class="primerInput">
+  <label>Promotions Packs</label>
+  <select name="impacttheme" class="form-control" id="impacttheme" required>
+    <option selected="">Select Packs</option>
+    <option value='agriculture'>100</option>
+    <option value='smallholder-agriculture'>500</option>
+    <option value='sustainable-agriculture'>1.000</option>
+    <option value='food-security'>1.500</option>
+
+  </select>
+
+  
+  
+  
+  
+  
+  
+  
+  <div class="invalid-feedback">
+    Please provide an impact theme.
+  </div>
+</div>
+
+
+
+            
+
+<div class="form-group">
+  <div class="form-check mt-4">
+    <input class="form-check-input" type="checkbox" id="gridCheck" required>
+    <label class="form-check-label" for="gridCheck">
+      I have read and accept impactyield <a href="">privacy policy</a>
+            </label>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+    
+      <div class="modal-footer" style="display: flex; justify-content: center; align-items: center; flex-direction: column; border-radius: 12px;">
+        <button type="button" class="btn btn-primary btn-lg btn-block" class="close" data-dismiss="modal" aria-label="Close" id="openSuccessModal">Promote</button>
+     
+       
+     
+     
+     
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------Estructura del modal -->
+<div class="popup-overlay" id="popup">
+  <div class="popup-content" style="display: flex; justify-content: center;align-items: center; flex-direction: column;">
+    <img src="/src/img/check.png" alt="Checkmark" style="width: 100px; height: auto; display: flex; justify-content: center;">
+    <br>
+    <h2>Congratulations!</h2>
+    <p>We have received your request</p>
+    <button class="close-popup" id="closePopup" style="background-color: #2a7ba0;">Close</button>
+  </div>
+</div>
+
+
+
+
+<script>
+  // Agrega un evento click al botón "Promote" dentro del primer modal
+  document.querySelector('#openSuccessModal').addEventListener('click', function() {
+    // Muestra el segundo pop-up cuando se hace clic en el botón "Promote"
+    const popup = document.getElementById("popup");
+    const popupContent = popup.querySelector(".popup-content");
+    
+    popupContent.style.display = "flex";
+    popup.style.display = "flex";
+  });
+
+  // Agrega un evento click al botón "Close" del segundo pop-up
+  document.querySelector('#closePopup').addEventListener('click', function() {
+    // Cierra el segundo pop-up
+    const popup = document.getElementById("popup");
+    const popupContent = popup.querySelector(".popup-content");
+
+    popupContent.style.display = "none";
+    popup.style.display = "none";
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1250,10 +1515,10 @@ var ajax_sib_front_object = {"ajax_url":"https:\/\/impactyield.com\/wp-admin\/ad
 <div class="card border-0 shadow-sm mt-4">
 	<div class="card-body">
 		
-      <h5 class="mb-5">Take a closer look at the more specific details of this fund</h5>
+      <h5 class="mb-5">Are you the owner of this fund? check your dashboards</h5>
      
-      <form accept-charset="UTF-8" action="/home.html">
-        <button type="submit" class="btn btn-primary btn-lg btn-block">Impact explainer</button>
+      <form accept-charset="UTF-8" action="/src/dashboart-estadisiticas-impac.html">
+        <button type="submit" class="btn btn-primary btn-lg btn-block">My Dashboards</button>
     </form>
 
 	</div>
@@ -1264,10 +1529,7 @@ var ajax_sib_front_object = {"ajax_url":"https:\/\/impactyield.com\/wp-admin\/ad
 
 
 
-<div class="card shadow-sm border-0 mb-3">
-  <div class="card-header">
-    <h4 class="h6 mb-0">Key performance indicators</h4>
-  </div>
+
   <div class="card-body">
     <div class="row">
                   <div class="col-md-6 text-center">
