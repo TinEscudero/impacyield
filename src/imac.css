@@ -185,23 +185,76 @@
 
 
 
-.image-overlay {
-    position: absolute;
-    top: 30px;
-    left: 260px;
-    display: flex;
-    flex-direction: row;}
-  
-  .image-overlay img {
-    margin: 2px;
-    width: 136px;
-    height: 152px;
-    border-radius: 11px;
-    /* margin-bottom: 18px; */
-    transition: transform 0.3s, opacity 0.3s;
+
+
+
+.n{
+    color: #ff3366;
+}
+
+
+
+
+
+
+
+
+
+.imgenes-fund-1 img{
+    width: 100px;
+    height: auto;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+
+.imgenes-fund-1 img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+  }
+
+  .imgenes-fund-1 img {
+    width: 150px;
+    height: auto;
+    margin-left: 7px;
+    cursor: pointer;
+  }
+
+  .imgenes-fun-1 img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.1);
+  }
+
+
+
+
+
+
+
+
+
+.imgenes-fund img {
+    width: 200px;
+    height: auto;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 10px;
   }
   
-  .image-overlay img:hover {
-    transform: scale(1.1); /* Efecto de zoom en hover */
-    opacity: 0.8; /* Cambio de opacidad en hover */
+  .imgenes-fund img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+  }
+
+  .imgenes-fund img {
+    width: 150px;
+    height: auto;
+    margin-left: 7px;
+    cursor: pointer;
+  }
+
+  .imgenes-fund img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.1);
   }

@@ -912,39 +912,80 @@ var ajax_sib_front_object = {"ajax_url":"https:\/\/impactyield.com\/wp-admin\/ad
             </div>
      
 
-
-<div class="card border-0 mb-3 shadow-sm form-not-logged">
-  <div class="card-body">
-
-      <h5 class="mb-3">Interested in this fund?<br> Log in or create an account to request more information.</h5>
-<p class="mb-4">Gain a deeper and comprehensive understanding of how this fund generates positive impact in the themes and SDGs that matter to you, with insights provided by our dedicated team of expert analysts, and receive notifications about new available impact products, exciting investment opportunities, and relevant updates in the world of impact investing.</p>
-
-<div class="row">
-  
-
-<div class="col-md-6">
-            <a href="" class="btn btn-primary btn-lg btn-block">Create account</a>
-</div>
-<div class="col-md-6">
-
-          <a href="" class="btn btn-outline-primary btn-lg btn-block">Login</a>
-
-</div>
-
-
-
-
-
-
-
-
-
-
+            <div class="card border-0 mb-3 shadow-sm form-not-logged">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-6">
+                   
+                    <img src="/src/img/cs.jpg" alt="usuario" style= "margin-left: 50px; border-radius: 50%; width: 130px; height: 130px; border-color: #2a7ba0;">
+                  </div>
+                  <br></br>
+                  <div class="col-md-5">
+                    <h5 class="mb-6">Agustín Escudero
+                      <br> Fund Manager.</h5>
+                      <p class="mb-6">Interested in applying to this fund? 
+                        Get in touch with the manager through the following links.</p>
+                  </div>
+                </div>
+                <br>
+                
+                <div class="row">
+                  <div class="col-md-6">
+                    <button style="margin-left: 20px;" type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#contactModal" style="width: auto;">Contact</button>
+                  </div>
+                  <div class="col-md-6">
+                    <button style="margin-left: 10px;" type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#mailModal" style="width: auto;">Send Mail</button>
+                  </div>
+                </div>
+         
 
 
 
-
-
+                <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h3 class="modal-title" id="successModalLabel" style="color: #2a7ba0">Contact Fund Manager</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body text-center">
+                        <h3>+34 6781626366</h3>
+                        <p>If you want to get in touch with the fund manager:</p>
+                        <button type="button" class="btn btn-primary btn-lg btn-block">
+                          <i class="fas fa-phone-alt"></i> Call
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="modal fade" id="mailModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h3 class="modal-title" id="successModalLabel" style="color: #2a7ba0">Compose Email</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <h3>info@fondo.com</h3>
+                        <div class="form-group">
+                          <label for="emailSubject">Subject</label>
+                          <input type="text" class="form-control" id="emailSubject" placeholder="Enter subject">
+                        </div>
+                        <div class="form-group">
+                          <label for="emailMessage">Message</label>
+                          <textarea class="form-control" id="emailMessage" rows="5" placeholder="Write your message here"></textarea>
+                          <br>
+                          <button style="display: flex;justify-content: center;" type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#mailModal" style="width: auto;">Send Mail</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            
 
 
 
