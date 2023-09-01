@@ -232,6 +232,67 @@
 
 
 
+card-publi{
+  height: auto;
+  background-color: #2A7BA0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.pp{
+color: #f1f1f1;
+    position: absolute;
+    bottom: -1px;
+    right: 0;
+    margin-right: 17px;
+    text-decoration: none;
+
+}
+
+
+
+  .imgenes-fund-2 img{
+    width: 100px;
+    height: auto;
+    margin: 5px;
+  
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+
+
+
+
+
+
+
+.imgenes-fund-2 img:hover {
+    transform: scale(1.1);
+   
+  }
+
+  .imgenes-fund-2 img {
+    width: 150px;
+    height: auto;
+    margin-top: -20px;
+    cursor: pointer;
+  }
+
+  .imgenes-fun-2 img:hover {
+    transform: scale(1.1);
+   
+  }
+
+
+
+
+
+
+
+
 
 
 .imgenes-fund img {
