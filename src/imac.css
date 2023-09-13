@@ -320,3 +320,181 @@ color: #f1f1f1;
     transform: scale(1.1);
     filter: brightness(1.1);
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+.contenedoresdahs{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+.chart1{
+    display: flex;
+    justify-content: center;
+    width: 800px;
+    height: 800px;
+
+}
+
+
+.horizontal-charts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0000009f;
+    margin-top: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.textoporcentaje{
+
+font-weight: bold;
+border-radius: 50%;
+height: 319px;
+    width: 351px;
+    text-align: center;
+    margin-top: -200px;
+    font-size: 40px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+
+
+.map {
+  height: 100%;
+  width: 90%;
+  place-content: center center;
+}
+
+.map path {
+  fill: rgb(103, 182, 255);
+  stroke: #5586cc;
+  stroke-width: 2px;
+  transition: fill 0.3s; /* Agregamos una transición para suavizar el cambio de color en hover */
+}
+
+.map path:hover {
+  fill: #1545a5;
+}
+
+.mapa {
+  display: flex;
+  justify-content: space-evenly;
+  box-shadow: 1px black;
+}
+
+
+
+.map path[title]::after {
+  content: attr(title);
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 999;
+  transition: opacity 0.3s;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.map path:hover[title]::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.menu ul {
+  display: none;
+}
+
+.menu .toggle {
+  cursor: pointer;
+}
+
+.menu .toggle:hover {
+  text-decoration: underline;
+}
+
+.menu .toggle::after {
+  content: '▼'; /* Flecha hacia abajo para indicar que es desplegable */
+  display: inline-block;
+  margin-left: 5px;
+  transition: transform 0.3s;
+}
+
+.menu .toggle.open::after {
+  transform: rotate(180deg); /* Cambia la dirección de la flecha cuando se abre */
+}
+
+.menu .toggle.open + ul {
+  display: block;
+}
+
+
