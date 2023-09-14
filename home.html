@@ -76,8 +76,8 @@ var ajax_sib_front_object = {"ajax_url":"https:\/\/impactyield.com\/wp-admin\/ad
 				<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 				</button>
-				<div id="navbarCollapse" class="navbar-collapse collapse"><ul id="menu-top" class="navbar-nav ml-auto"><li id="menu-item-4461" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-4461 active"><a title="Home" href="/home.html">Home</a></li>
-          <li id="menu-item-4244" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4244"><a title="Dashboards" href="/dashboard/index.html">Dashboards</a></li>
+				<div id="navbarCollapse" class="navbar-collapse collapse"><ul id="menu-top" class="navbar-nav ml-auto"><li id="menu-item-4461" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-4461 active"><a class="habilitado" title="Home" href="/home.html">Home</a></li>
+          <li id="menu-item-4244" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4244"><a class="habilitado" title="Dashboards" href="/src/dashboart-estadisiticas-impac.html">Dashboards</a></li>
 <li id="menu-item-4244" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4244"><a title="About Us" href="">About Us</a></li>
 <li id="menu-item-4463" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4463 dropdown"><a title="Database" href="" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true">Database <span class="caret"></span></a>
 <ul role="menu" class=" dropdown-menu">
@@ -548,7 +548,7 @@ var ajax_sib_front_object = {"ajax_url":"https:\/\/impactyield.com\/wp-admin\/ad
   
 <div  class="col-md-6 col-12 mb-4 mb-md-0">
   
-            <a href ="/src/impac-2.html" type="submit" class="btn btn-primary btn-block">Search funds</a>
+            <a href ="/src/impac-2.html" type="submit" class="btn btn-primary btn-block habilitado">Search funds</a>
 
 </div>
 
@@ -585,19 +585,19 @@ var ajax_sib_front_object = {"ajax_url":"https:\/\/impactyield.com\/wp-admin\/ad
           <p style="margin-right: 48px; color: white; text-align: left;">The top featured funds in this place</p>
         </div>
         <div class="imgenes-fund-1">
-          <a href="/src/fund-explane-3.html">
+          <a class="habilitado" href="/src/fund-explane-3.html">
           <img src="/src/img/eco1.PNG" alt="imagen1"></a>
-          <a href="/src/fund-explane-3.html">
+          <a class="habilitado" href="/src/fund-explane-3.html">
           <img src="/src/img/eco2.PNG" alt="imagen2"></a>
-          <a href="/src/fund-explane-3.html">
+          <a class="habilitado" href="/src/fund-explane-3.html">
              <img src="/src/img/eco3.PNG" alt="imagen3"></a>
-             <a href="/src/fund-explane-3.html">
+             <a class="habilitado" href="/src/fund-explane-3.html">
                <img src="/src/img/eco1.PNG" alt="imagen4"></a>
-               <a href="/src/fund-explane-3.html">
+               <a class="habilitado" href="/src/fund-explane-3.html">
                   <img src="/src/img/eco2.PNG" alt="imagen5"></a>
         </div>
         <div style="background-color: #2A7BA0;height: 200px;">
-        <a href="/h.html" style="color: #f1f1f1; 
+        <a class="habilitado"href="/h.html" style="color: #f1f1f1; 
         position: absolute; bottom: 10px; right: 0; margin-right: 24px;
          text-decoration: none;">see more</a>
       </div>
@@ -842,7 +842,7 @@ var ajax_sib_front_object = {"ajax_url":"https:\/\/impactyield.com\/wp-admin\/ad
   
   </div>
   <div class="text-center">
-    <a class="btn btn-primary mt-5" href="">Search More Funds</a>
+    <a class="btn btn-primary mt-5 habilitado" href="/src/impac-2.html">Search More Funds</a>
   </div>
 </div>
 </section>
@@ -1523,6 +1523,36 @@ var ajax_sib_front_object = {"ajax_url":"https:\/\/impactyield.com\/wp-admin\/ad
 
   gtag('config', 'G-SZBJ2GMW22');
 </script>
+
+
+
+
+
+
+
+<script>
+  
+  var enlaces = document.querySelectorAll('a');
+
+  
+  enlaces.forEach(function(enlace) {
+      
+      enlace.addEventListener('click', function(event) {
+          
+          if (!enlace.classList.contains('habilitado')) {
+              event.preventDefault(); 
+              alert('Este enlace está deshabilitado.');
+          }
+      });
+  });
+</script>
+
+
+
+
+
+
+
 
 </body>
 </html>
