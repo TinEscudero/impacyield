@@ -212,7 +212,7 @@
 
 .imgenes-fund-1 img:hover {
     transform: scale(1.1);
-    filter: brightness(1.2);
+    filter: brightness();
   }
 
   .imgenes-fund-1 img {
@@ -224,7 +224,7 @@
 
   .imgenes-fun-1 img:hover {
     transform: scale(1.1);
-    filter: brightness(1.1);
+    filter: brightness();
   }
 
 
@@ -306,7 +306,7 @@ color: #f1f1f1;
   
   .imgenes-fund img:hover {
     transform: scale(1.1);
-    filter: brightness(1.2);
+    filter: brightness();
   }
 
   .imgenes-fund img {
@@ -318,7 +318,7 @@ color: #f1f1f1;
 
   .imgenes-fund img:hover {
     transform: scale(1.1);
-    filter: brightness(1.1);
+    filter: brightness();
   }
 
 
